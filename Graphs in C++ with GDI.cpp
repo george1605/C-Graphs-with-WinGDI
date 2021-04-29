@@ -1,4 +1,5 @@
 #include <windows.h>
+#include <functional>
 #include <iostream>
 
 #define RED RGB(255,0,0)
@@ -113,6 +114,10 @@ bool DrawPath(HDC h,LINE* lines,int nrlines) {
     }catch (...) {
         return false;
     }
+}
+
+void DrawFunction(function<int(int)> a){
+    
 }
 
 int main(void)
