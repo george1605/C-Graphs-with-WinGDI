@@ -1,4 +1,4 @@
-#include <windows.h>
+#include <windows.h> //for Rectangle,RECT,POINT,SetPixel,LineTo and RGB
 #include <functional>
 #include <iostream>
 
