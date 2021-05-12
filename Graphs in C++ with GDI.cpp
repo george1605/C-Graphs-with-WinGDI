@@ -6,6 +6,8 @@
 #define BLUE RGB(0,0,255)
 #define YELLOW RGB(255,255,0)
 #define WHITE RGB(255,255,255)
+#define CYAN RGB(0,255,255)
+#define BLACK RGB(0,0,0)
 using namespace std;
 
 HDC crntDC;
@@ -116,8 +118,10 @@ bool DrawPath(HDC h,LINE* lines,int nrlines) {
     }
 }
 
-void DrawFunction(function<int(int)> a){
-    
+void DrawFunction(function<int(int)> a,int step){
+   for(int a=1;a < 100;a += step){
+    //Setting the pixel color to white
+   }
 }
 
 int main(void)
